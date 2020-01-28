@@ -42,3 +42,14 @@ while (true) {
     break;
   }
 }
+
+let hours = 60;
+let wage = 10;
+
+if (hours <= 40) {
+  console.log(40 * wage);
+} else {
+  let extraHours = hours - 40;
+  let extraHoursPay = extraHours * wage * 1.5 + wage * 40;
+  console.log(extraHoursPay);
+}
